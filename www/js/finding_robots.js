@@ -9,7 +9,7 @@ $(window).load(function(){
     var i="8081",a=new WebSocket("ws://"+e+":"+i);
     a.onopen=function(){
       $("<a></a>",{
-        "class":"list-group-item",href:"/joy.html?websocketServer="+e+":"+i,text:e
+        "class":"list-group-item",href:"/joy.html?websocketServer="+e+":"+i,text:e, "window.location":"/joy.html?websocketServer="+e+":"+i,text:e
         }
       ).appendTo("#available_IP"),a.close(),o++
     }
