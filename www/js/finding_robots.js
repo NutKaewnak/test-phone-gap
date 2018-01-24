@@ -1,8 +1,8 @@
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-            .register('./service-worker.js')
-            .then(function() { console.log('Service Worker Registered'); });
-}
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker
+//             .register('./service-worker.js')
+//             .then(function() { console.log('Service Worker Registered'); });
+// }
 
 $(window).load(function(){
   function e(){function e(e){
@@ -15,7 +15,7 @@ $(window).load(function(){
     }
   }
   $("#scanning-ip-item").removeClass("hide"),$("#no-avaliable-ip-item").addClass("hide");
-  for(var i="192.168.1.",a=0;100>a;a++){
+  for(var i="192.168.0.",a=150;170>a;a++){
     var n=i+a;console.log(n),e(n)
   }
   var o=0;setTimeout(function(){
